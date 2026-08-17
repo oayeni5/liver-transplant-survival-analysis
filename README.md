@@ -1,19 +1,34 @@
-# liver-transplant-survival-analysis
-R-based survival analysis workflow for liver transplant outcomes research.
-
-# Liver Transplant Survival Analysis in R
+# Liver Transplant Outcomes: R Survival Analysis Workflow
 
 ## Overview
 
-This project demonstrates an R-based workflow for analyzing liver transplant outcomes using survival analysis methods.
+This project demonstrates an R-based workflow for preparing liver transplant data and conducting survival analysis.
 
-The original research project used national liver transplant registry data to evaluate outcomes after liver retransplantation among patients with autoimmune liver disease. The workflow included preparing the analytic cohort, creating derived variables, performing data quality checks, and conducting statistical analyses.
+The project is based on a clinical outcomes research workflow involving national liver transplant registry data. The analysis includes building an analytic cohort, creating derived variables, performing data quality checks, generating descriptive statistics, and conducting survival analyses.
 
-> **Note:** The original clinical dataset is not included in this public repository because it contains restricted research data. This repository is intended to demonstrate the analytical workflow and programming approach.
+This public portfolio version uses synthetic data so the analytical workflow can be demonstrated without sharing restricted clinical data.
 
 ## Research Question
 
-The original study examined whether autoimmune liver disease was associated with long-term graft outcomes following liver retransplantation and whether outcomes differed across autoimmune disease subtypes.
+The original research examined whether autoimmune liver disease was associated with long-term graft outcomes following liver retransplantation and whether outcomes differed across autoimmune disease subtypes.
+
+## Data
+
+This repository contains a fully synthetic dataset with 250 fictional patient records created solely for portfolio demonstration.
+
+The synthetic dataset includes variables representing:
+
+- Patient demographics
+- Transplant dates
+- Autoimmune disease groups
+- BMI
+- Diabetes
+- Dialysis
+- Simultaneous liver-kidney transplant status
+- Follow-up time
+- Late graft loss
+
+No real patient-level or restricted clinical data are included in this repository.
 
 ## Analytical Workflow
 
@@ -24,7 +39,7 @@ The original study examined whether autoimmune liver disease was associated with
 5. Generate descriptive statistics
 6. Conduct Kaplan-Meier survival analysis
 7. Perform Cox proportional hazards regression
-8. Present and interpret the results
+8. Present the results
 
 ## Statistical Methods
 
@@ -40,7 +55,8 @@ The Kaplan-Meier analysis below demonstrates the cumulative probability of late 
 ![Kaplan-Meier Survival Curve](outputs/kaplan_meier_curve.png)
 
 > **Note:** This visualization is based entirely on synthetic data created for portfolio demonstration purposes and does not represent actual patient outcomes.
-## Programming
+
+## Programming & Packages
 
 - R
 - `dplyr`
@@ -52,8 +68,10 @@ The Kaplan-Meier analysis below demonstrates the cumulative probability of late 
 
 - Healthcare data preparation
 - Analytic cohort development
+- Inclusion and exclusion criteria
 - Data cleaning and validation
 - Derived variable creation
+- Descriptive statistics
 - Survival analysis
 - Statistical modeling
 - Data visualization
@@ -71,6 +89,6 @@ The script uses the synthetic dataset included in the `data` folder.
 
 ## Project Notes
 
-The original research project used restricted clinical registry data. Those data and the original patient-level information are not included in this repository.
+The original research project used restricted clinical registry data. The original dataset and patient-level information are not included in this repository.
 
-A synthetic dataset is provided so the analytical workflow can be demonstrated and reproduced without sharing restricted clinical data.
+The synthetic dataset included here was created specifically to demonstrate the general data preparation and statistical analysis workflow used in the project.
