@@ -33,6 +33,13 @@ The original study examined whether autoimmune liver disease was associated with
 - Log-rank test
 - Cox proportional hazards regression
 
+## Example Output
+
+The Kaplan-Meier analysis below demonstrates the cumulative probability of late graft loss among adult patients in the synthetic dataset, stratified by autoimmune status.
+
+![Kaplan-Meier Survival Curve](outputs/kaplan_meier_curve.png)
+
+> **Note:** This visualization is based entirely on synthetic data created for portfolio demonstration purposes and does not represent actual patient outcomes.
 ## Programming
 
 - R
@@ -51,3 +58,19 @@ The original study examined whether autoimmune liver disease was associated with
 - Statistical modeling
 - Data visualization
 - Reproducible analytical workflows
+
+## How to Run This Project
+
+1. Download or clone this repository.
+2. Open the project folder in RStudio.
+3. Make sure the `data` folder is located in the project directory.
+4. Open `R/liver_transplant_analysis.R`.
+5. Run the script from beginning to end.
+
+The script uses the synthetic dataset included in the `data` folder.
+
+## Project Notes
+
+The original research project used restricted clinical registry data. Those data and the original patient-level information are not included in this repository.
+
+A synthetic dataset is provided so the analytical workflow can be demonstrated and reproduced without sharing restricted clinical data.
